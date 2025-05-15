@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link id="icon" rel="icon" href="" />
+
+    <link rel="stylesheet" href="./cunny style sheets/site.css" />
+    <link rel="stylesheet" href="./cunny style sheets/footer.css" />
+    <link rel="stylesheet" href="./cunny style sheets/main.css" />
+    <link rel="stylesheet" href="./cunny style sheets/sidebar.css" />
+
+    <script src="./junior scripts/main.js"></script>
+    <script src="./junior scripts/sidebar.js"></script>
+    <script src="./junior scripts/pulldown.js"></script>
+  </head>
+  <body>
+    <div id="status">placeholder</div>
+    <!--sidebar section-->
+    <div class="sidebar">
+      <!--title of sidebar-->
+      <div class="titleSidebar">
+        <img src="./gooner pics/shiroko-dance.gif" />
+        <p>Baconway</p>
+      </div>
+
+      <!--navigation section-->
+      <nav>
+        <div
+          class="navigator"
+          title="home page redirect"
+          onmousedown="navRedirect('site')"
+        >
+          <img src="./gooner pics/home.svg" />
+          <p>Home</p>
+        </div>
+        <div
+          class="navigator"
+          title="portfolio redirect"
+          onmousedown="navRedirect('portfolio')"
+        >
+          <img src="./gooner pics/note-edit.svg" />
+          <p>Portfolio</p>
+        </div>
+      </nav>
+    </div>
+
+    <!--game info section-->
+    <div class="game_info">
+      <h1>Welcome!</h1>
+      <p>Stumbling onto this page might aswell make you cool</p>
+
+      <!--pulldown section-->
+      <div class="pulldown">
+        <button onmousedown="buttonPress('Platform')">Platforms</button>
+        <ul id="Platform"></ul>
+      </div>
+
+      <div class="pulldown">
+        <button onmousedown="buttonPress('Game')">Games</button>
+        <ul id="Game"></ul>
+      </div>
+    </div>
+    <!--footer section-->
+    <footer>
+      <p>&commat; This footer is supposed to be cooler but idk how</p>
+    </footer>
+  </body>
+</html>

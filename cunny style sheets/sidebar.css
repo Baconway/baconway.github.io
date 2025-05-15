@@ -1,0 +1,54 @@
+.sidebar {
+    /*position styles*/
+    position: fixed;
+    bottom: 34px;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 40px;
+    
+    /*styles*/
+    background-color: rgb(114, 134, 142);
+    border: rgb(108, 156, 250) solid;
+
+    transition: max-width 0.6s;
+
+    &.sidebar:hover {
+        max-width: 150px;
+    }
+
+    &.sidebar:hover p {opacity: 1;}
+}
+
+.titleSidebar, .navigator {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: row;
+    column-gap: 5px;
+    margin-top: 5px;
+
+    p {
+        opacity: 0;
+        text-align: center;
+        transition: opacity 0.8s;
+        font-size: 18px;
+    }
+
+    img {
+        max-width: 40px;
+        
+    }
+
+    img[src$='.svg'] {
+        filter: invert(100%);
+    }
+}
+
+.navigator {
+    border-block: solid bisque 2px;
+}
+
+.navigator:hover {
+    cursor: pointer;
+}

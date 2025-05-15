@@ -1,0 +1,32 @@
+/* made just to deal with element references*/
+body {
+  font-family: "Segoe UI";
+  background-color: rgb(42, 42, 42);
+  color: white;
+  margin: 26.6px 0px 26.6px 50px;
+
+  font-size: 20px;
+}
+
+#status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgb(88, 88, 88);
+  padding-left: 50px;
+
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  font-size: 23px;
+  color: brown;
+  text-decoration: none;
+}
+
+p {
+  padding: 0px;
+}
