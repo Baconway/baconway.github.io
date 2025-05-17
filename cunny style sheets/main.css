@@ -1,54 +1,78 @@
-@keyframes hoverTransition { /*create keyframes to make animations*/
-    0% {color: white}
-    12.5% {color: red}
-    25% {color: orange}
-    37.5%{color: yellow} 
-    50% {color: green;}
-    62.5% {color: blue} 
-    75% {color: indigo} 
-    87.5% {color: violet}
-    100% {color: white;}
+@keyframes hoverTransition {
+  /*create keyframes to make animations*/
+  0% {
+    color: white;
+  }
+  12.5% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  37.5% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  62.5% {
+    color: blue;
+  }
+  75% {
+    color: indigo;
+  }
+  87.5% {
+    color: violet;
+  }
+  100% {
+    color: white;
+  }
 }
 
 @keyframes list_show {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-.game_info, .pulldown {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.game_info,
+.pulldown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pulldown {
-    margin-top: 10px;
+  margin-top: 10px;
 
-    ul {
-        padding: 0px;
-        margin: 10px 0px;
-        list-style-type: katakana;
+  ul {
+    padding: 0px;
+    margin: 10px 0px;
+    list-style-type: katakana;
 
-        li {
-            opacity: 0;
-            animation: list_show 0.25s linear forwards;
-            margin-bottom: 5px;
-        }
+    li {
+      opacity: 0;
+      animation: list_show 0.25s linear forwards;
+      margin-bottom: 5px;
     }
+  }
 
-    button {
-        display: block;
-        font-size: 25px;
-        margin: 0px;
-        padding: 5px 15px;
+  button {
+    display: block;
+    font-size: 25px;
+    margin: 0px;
+    padding: 5px 15px;
 
-        border: white dashed 1px;
-        background: none;
-        color: white;
-    }
+    border: white dashed 1px;
+    background: none;
+    color: white;
+  }
 }
 
 .pulldown:hover button {
-    animation: hoverTransition 4.5s ease-in-out infinite;
+  animation: hoverTransition 4.5s ease-in-out infinite;
+}
+
+h1 {
+  animation: hoverTransition 4.5s ease-in-out infinite;
 }
