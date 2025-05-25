@@ -25,9 +25,18 @@ fetch("https://api.lanyard.rest/v1/users/714482641134551071")
       ".png?size=32";
     console.log(data);
     document.getElementById("icon").href = av_link;
-    setExtras(
-      data.data.discord_status,
-      data.data.activities[0].name,
-      data.data.discord_user.display_name
-    );
+
+    if (data.data.activities.length > 0) {
+      setExtras(
+        data.data.discord_status,
+        data.data.activities[0].name,
+        data.data.discord_user.display_name
+      );
+    } else {
+      setExtras(
+        data.data.discord_status,
+        "Idle",
+        data.data.discord_user.display_name
+      );
+    }
   });
