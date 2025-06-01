@@ -12,6 +12,7 @@
     <script src="./junior scripts/main.js"></script>
     <script src="./junior scripts/sidebar.js"></script>
     <script src="./junior scripts/pulldown.js"></script>
+    <script src="./junior scripts/indexExtras.js"></script>
   </head>
   <body>
     <div id="status">Offline</div>
@@ -44,6 +45,11 @@
       </nav>
     </div>
 
+    <div class="popup" onclick="catCollapse()">
+      <p>Cat Photo</p>
+      <img src="https://cow.flaz.ing/" />
+    </div>
+
     <!--game info section-->
     <div class="game_info">
       <h1>Welcome!</h1>
@@ -60,7 +66,9 @@
         <button onmousedown="buttonPress('Game')">Games</button>
         <ul id="Game"></ul>
       </div>
+      <!--modal popup-->
     </div>
+
     <!--footer section-->
     <footer>
       <p>&commat; This footer is supposed to be cooler but idk how</p>

@@ -3,7 +3,7 @@ body {
   font-family: "Segoe UI";
   background-color: rgb(42, 42, 42);
   color: white;
-  margin: 26.6px 0px 26.6px 50px;
+  margin: 26.6px 0px 35px 50px;
 
   font-size: 20px;
 }
@@ -27,5 +27,6 @@ a {
 }
 
 p {
+  display: inline;
   padding: 0px;
 }
