@@ -14,8 +14,9 @@
     <script src="./junior scripts/pulldown.js"></script>
     <script src="./junior scripts/indexExtras.js"></script>
   </head>
+
   <body>
-    <div id="status">Offline</div>
+    <div id="status" onclick="getActivities()">Offline</div>
     <!--sidebar section-->
     <div class="sidebar">
       <!--title of sidebar-->
@@ -49,7 +50,11 @@
       <p>Cat Photo</p>
       <img src="https://cow.flaz.ing/" />
     </div>
-
+    <div
+      class="activitiesDisplay"
+      style="visibility: hidden"
+      onclick="getActivities()"
+    ></div>
     <!--game info section-->
     <div class="game_info">
       <h1>Welcome!</h1>
