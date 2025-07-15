@@ -26,7 +26,7 @@ function receiveTemplate({ application_id, name, details, state, assets }) {
   small_img = interpretImageLinks(name, application_id, assets.small_image);
 
   return `<div class="displayer">
-    Activity
+    <p id='ActivityHeader'>Activity</p>
         <div class="activityInfo">
           <div class='images'>
             <img title='${assets.large_text}'
@@ -35,9 +35,9 @@ function receiveTemplate({ application_id, name, details, state, assets }) {
             src=${small_img} />
           </div>
           <div class="activityText">
-            <p id="name" title=${name}>${name}</p>
-            <p id="details" title=${details}>${details}</p>
-            <p id="state" title=${state}>${state}</p>
+            <p id="name" title='${name}'>${name}</p>
+            <p id="details" title='${details}'>${details}</p>
+            <p id="state" title='${state}'>${state}</p>
           </div>
         </div>
       </div>`;

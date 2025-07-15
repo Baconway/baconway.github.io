@@ -36,7 +36,7 @@ function buttonPress(parent) {
       bullet.innerHTML = `<span>${key} ${value}</span>`;
 
       if (Links[key]) {
-        bullet.innerHTML += `<a href="${Links[key]}">Link</a>`;
+        bullet.innerHTML += `<a href="${Links[key]}" target="_blank">Link</a>`;
       }
 
       bulletParent.appendChild(bullet);
