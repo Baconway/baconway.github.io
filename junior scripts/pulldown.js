@@ -9,11 +9,11 @@ const childLists = {
   },
 
   Game: {
-    "Arknights: ": "Baconway#5628 (inactive)",
-    "maimai: ": "101820453238481",
-    "Honkai: Star Rail: ": "802221265 (Asia)",
-    "Azur Lane : ": "Baconway (Avrora server)",
-    "Blue Archive:": " AYYFRDKZ",
+    "Arknights (inactive): ": "Baconway#5628",
+    "maimai (friend code): ": "101820453238481",
+    "Honkai: Star Rail (Asia): ": "802221265",
+    "Azur Lane (Avrora server) : ": "Baconway",
+    "Blue Archive: ": "AYYFRDKZ",
     "Conflict Of Nations: ": "Baconway",
   },
 };
@@ -27,13 +27,18 @@ const Links = {
   Roblox: "https://www.roblox.com/users/243533657/profile",
 };
 
+function copySectionClicked(copyText) {
+  navigator.clipboard.writeText(copyText);
+  alert("Item copied!");
+}
+
 function buttonPress(parent) {
   const bulletParent = document.getElementById(parent);
 
   if (bulletParent.getElementsByTagName("li").length <= 0) {
     for (let [key, value] of Object.entries(childLists[parent])) {
       const bullet = document.createElement("li");
-      bullet.innerHTML = `<span>${key} ${value}</span>`;
+      bullet.innerHTML = `<span>${key} <span onclick='copySectionClicked("${value}")' title='Click on this to copy!'>${value}</span></span>`;
 
       if (Links[key]) {
         bullet.innerHTML += `<a href="${Links[key]}" target="_blank">Link</a>`;
