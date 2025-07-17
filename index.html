@@ -15,7 +15,7 @@
     <script src="./junior scripts/indexExtras.js"></script>
   </head>
 
-  <body>
+  <body onload="createSnowfall()">
     <div id="status" onclick="getActivities()">Offline</div>
     <!--sidebar section-->
     <div class="sidebar">
@@ -45,7 +45,7 @@
         </div>
       </nav>
     </div>
-
+    <div class="snowHolder"></div>
     <div class="popup" onclick="catCollapse()">
       <p>Cat Photo</p>
       <img src="https://cow.flaz.ing/" />
