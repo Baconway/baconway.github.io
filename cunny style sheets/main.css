@@ -52,10 +52,14 @@
   align-items: center;
 }
 
-.snow img {
+.snow {
   width: 1%;
 
-  position: absolute;
+  position: fixed;
+}
+
+.snow img {
+  width: 100%;
 
   animation: falling 9s ease-in infinite;
 }

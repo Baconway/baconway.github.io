@@ -76,25 +76,22 @@ function getActivities() {
 }
 
 function createSnowfall() {
-  console.log("hello");
   let wait = 1;
 
   for (let index = 0; index < 25; index++) {
-    console.log("hi");
+    console.log(window.innerWidth);
     setTimeout(function () {
-      console.log("settimeout func running!");
       const snowDiv = document.createElement("div");
       snowDiv.className = "snow";
 
       snowDiv.style.transform = `translateX(${
-        Math.random() * window.innerWidth + 1
+        Math.random() * (window.innerWidth - 50)
       }px)`;
-
-      snowDiv.innerHTML += `<div class="snow" style="transform: ;"><img src="./gooner pics/snowflake-clip-art-snowflakes-png-file-b1470a45381b645358d2fbf959f2549d.png"/>`;
+      console.log(snowDiv.style.transform);
+      snowDiv.innerHTML += `<img src="./gooner pics/snowflake-clip-art-snowflakes-png-file-b1470a45381b645358d2fbf959f2549d.png"/>`;
 
       document.getElementsByClassName("snowHolder")[0].appendChild(snowDiv);
     }, wait * 1000);
-    console.log("hello");
     wait++;
   }
 
@@ -108,7 +105,7 @@ function createSnowfall() {
     element.addEventListener("animationiteration", function () {
       console.log(window.innerWidth);
       element.style.transform = `translateX(${
-        Math.random() * window.innerWidth + 1
+        Math.random() * (window.innerWidth - 50)
       }px`;
     });
   }
