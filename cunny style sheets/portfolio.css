@@ -68,3 +68,9 @@
 span {
   animation: hoverTransition 4.5s ease-in-out infinite;
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 30px;
+  }
+}

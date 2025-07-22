@@ -57,14 +57,8 @@
 
 @media screen and (max-width: 1000px) {
   .sidebar {
-    max-width: 60px;
-
     &.sidebar:hover {
       max-width: 200px;
-    }
-
-    img {
-      max-width: 60px;
     }
   }
   .navigator img {
