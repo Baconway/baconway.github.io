@@ -129,5 +129,12 @@ a {
 
 p {
   display: inline;
+
   padding: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  #status {
+    font-size: 30px;
+  }
 }
