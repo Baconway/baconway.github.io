@@ -15,6 +15,7 @@ const childLists = {
     "Azur Lane (Avrora server) : ": "Baconway",
     "Blue Archive: ": "AYYFRDKZ",
     "Conflict Of Nations: ": "Baconway",
+    Umamusume: "682841017093",
   },
 };
 
